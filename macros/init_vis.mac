@@ -1,0 +1,19 @@
+ 
+/vis/open HepRepFile
+
+# Configurar estilo de visualización
+/vis/viewer/set/style wireframe
+
+# Dibujar la geometría definida en DetectorConstruction
+/vis/drawVolume
+
+# Habilitar las trayectorias de las partículas
+/vis/scene/add/trajectories
+
+# Habilitar la actualización automática de la ventana
+/vis/viewer/set/autoRefresh true
+
+/run/initalize
+
+# Generar 10 eventos para probar la simulación
+/run/beamOn 10
